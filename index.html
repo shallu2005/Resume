@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhushalini S| Resume Portfolio</title>
+
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f3f8;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      background: #004aad;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 5px 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #007bff;
+    }
+
+    section {
+      display: none;
+      padding: 4rem 2rem;
+      min-height: 90vh;
+    }
+
+    /* ---------- Home Section ---------- */
+    #home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
+        ),
+        url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80')
+          no-repeat center center/cover;
+      color: white;
+    }
+
+    #home h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    #home p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #005fcc;
+    }
+
+    /* ---------- Resume Section ---------- */
+    .resume-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .resume-section {
+      margin-bottom: 2rem;
+    }
+
+    .resume-section h2 {
+      color: #004aad;
+      border-bottom: 2px solid #004aad;
+      margin-bottom: 1rem;
+      padding-bottom: 5px;
+    }
+
+    .skills-list {
+      columns: 2;
+      list-style: square;
+      margin-left: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+
+    /* ---------- Contact Section ---------- */
+    .contact-form {
+      max-width: 400px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #003580;
+      color: white;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      .skills-list {
+        columns: 1;
+      }
+      #home h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" class="active" data-section="home">Home</a></li>
+        <li><a href="#" data-section="resume">Resume</a></li>
+        <li><a href="#" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home">
+    <h1>Madhushalini S</h1>
+    <p>A motivated computer science graduate eager to apply academic knowledge to real-world projects. Passionate about learning modern technologies and building impactful software.</p>
+    <a href="#" class="btn" data-section="resume">View My Resume</a>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume">
+    <div class="resume-container">
+      <div class="resume-section">
+        <h2>Personal Information</h2>
+        <p><strong>Name:</strong>Madhushalini S</p>
+        <p><strong>Address:</strong> #60 John Krishna Murthy castle,kanakanagar,varanasi main road,bengaluru-43</p>
+        <p><strong>Email:</strong> madhus06157@gmail.com</p>
+        <p><strong>Phone:</strong> 8861440697</p>
+      </div>
+
+      <div class="resume-section">
+        <h2>Education</h2>
+        <table>
+          <tr><th>Degree</th><th>Institution</th><th>Year</th></tr>
+          <tr><td>BE Computer Science</td><td>GOPALAN COLLEGE OF ENGINEERING AND MANAGEMENT</td><td>2023</td></tr>
+        </table>
+      </div>
+
+      <div class="resume-section">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5, CSS3, JavaScript, React</li>
+          <li>Node.js, Express.js, MongoDB</li>
+          <li>Responsive Web Design</li>
+          <li>Version Control (Git)</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h2>Work Experience</h2>
+        <article>
+          <h3>Student</h3>
+          <p><em>Aug 2023 - Present</em></p>
+        </article>
+      </div>
+
+      <div class="resume-section">
+        <h2>Projects</h2>
+        <ul>
+          <li><strong>Portfolio Website:</strong> A responsive personal site built with HTML, CSS, and JS. <a href="#">View Project</a></li>
+          <li><strong>Task Tracker App:</strong> A React-based task management app. <a href="#">View Project</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>©  All rights reserved.</p>
+  </footer>
+
+  <!-- ---------- JAVASCRIPT / JQUERY ---------- -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Show Home by default
+      $("#home").show();
+
+      // Navigation click behavior
+      $("nav a, .btn").on("click", function(e) {
+        e.preventDefault();
+
+        const sectionToShow = $(this).data("section");
+
+        if (!sectionToShow) return;
+
+        // Highlight active link
+        $("nav a").removeClass("active");
+        $(`nav a[data-section='${sectionToShow}']`).addClass("active");
+
+        // Hide all, show selected with fade
+        $("section").hide();
+        $("#" + sectionToShow).fadeIn(600);
+      });
+
+      // Form validation
+      $("#contactForm").submit(function(e) {
+        e.preventDefault();
+        let valid = true;
+
+        $("#contactForm input, #contactForm textarea").each(function() {
+          if ($(this).val().trim() === '') {
+            valid = false;
+            $(this).css("border", "2px solid red");
+          } else {
+            $(this).css("border", "1px solid #ccc");
+          }
+        });
+
+        if (valid) {
+          alert("Message sent successfully!");
+          $("#contactForm")[0].reset();
+        } else {
+          alert("Please fill all fields correctly.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
